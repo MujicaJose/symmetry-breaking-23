@@ -1,0 +1,46 @@
+# Initial data for SDD:
+dat='sdd' 
+
+# Rest of the constants
+
+NDIM=  5
+IPS =   7                                      # Problem type. 7=BVP with computation of FM.
+IRS =   0                                        # Start solution label. If IRS=0 we are in the first run. Starting sol is defined in STPNT routine.
+ILP =   1                                       # fold detection.
+ICP= [5,11,16,17,18,19,20,21,22,23,24,25]      # Continuation parameters. The first parameter in the list is the main one. 
+NTST= 200                                      # Number of mesh intervals.
+NCOL=   4                                       # Collocation points. 4 is recommended.
+IAD =   3                                       # Mesh adaption every 3 steps.
+ISP =   2                                       # Detection of Hopf bifurcation activated - branch point.
+ISW = 1                                         # Branch switching.
+IPLT= 0                                         # L2 norm.
+NBC= 15                                          # Number of boundary conditions.
+NINT= 0                                         # Number of integral conditions.
+NMX=  500                                      # Maximum number of steps.
+NPR= 5                                    # Print and save each NPR steps.
+MXBF=   2                                       # Automatic branch switching.
+IID =   2                                       # Control diagnostic output normal.
+ITMX= 8                                         # Maximum number of iterations. For locating special solutions/points 8 is recommended.
+ITNW= 7                                         # Maximun number of correction steps. 5 is recommended.
+NWTN= 3                                         # Corrector uses full Newton for NWTN steps. 3 is recommended.
+JAC= 0                                          # User defines derivatives. 0= NO. 1=YES.
+EPSL= 1e-07                                    # Convergence criterion for parameters.
+EPSU = 1e-07                                    # Convergence criterion for solution components.
+EPSS = 1e-04                                   # Convergence criterion for special points.
+DS  = -0.001                                       # Start step size.
+DSMIN= 1e-5                                    # Step size interval. Lower bound.
+DSMAX=  0.01                                    # Step size interval. Upper bound.
+IADS=   1                                       # Step size adaption every IADS steps.
+NPAR = 40                                    # Maximun number of parameters.
+THL= {5:0.0,11:0.0,16:0.0,17:0.0,18:0.0,19:0.0,20:0.0,21:0.0,22:0.0,23:0.0,24:0.0,25:0.0}                                       # List of parameters and solution weight.
+THU =  {}                                       # List of parameters and solution weight.
+UZR= {-5:0.01}                                     # List of values for user defined output.
+UZSTOP = []                                  # List of bifurcations to check and bifurcation stop conditions.
+
+
+
+
+
+
+
+
